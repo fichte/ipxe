@@ -104,6 +104,7 @@ copy_syslinux_file() {
 	/usr/local/share/syslinux/bios/com32/elflink/ldlinux \
 	/usr/local/share/syslinux/modules/bios \
 	/usr/lib/ISOLINUX \
+	../../ \
 	; do
 	if [ -e "${SRCDIR}/${FILENAME}" ] ; then
 	    install -m 644 "${SRCDIR}/${FILENAME}" "${DESTDIR}/"
